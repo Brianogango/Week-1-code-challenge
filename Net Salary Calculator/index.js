@@ -87,8 +87,8 @@ reliefDisplay.innerText=`${personalRelief}`;
 pensionDisplay.innerText=`${PensionFundContribution}`;
 disabilityDisplay.innerText=`${disabilityExemption}`;
 housingDisplay.innerText=`${housingRelief}`;
-nssfdeductionDisplay.innerText=`${nssfAmount}`;
-nhifdeductionDisplay.innerText=`${nhifAmount}`;
-
-netsallary.innerText=`(${grossIncome}-(${paye}+${nhifAmount}+${nssfAmount}))`;
+nssfDisplay.innerText=`${nssfAmount}`;
+nhifDisplay.innerText=`${nhifAmount}`;
+let totalDeduction= `(${paye}+${nhifAmount}+${nssfAmount})`;
+netsalary.innerText=`${grossIncome}-${totalDeduction}`;
 }
