@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAX CALCULATOR</title>
+</head>
+<body>
+  <!---------HTML form layout-->
+   <div class="content">
+    <div class="title">
+      <h2 class="title">TAX CALCULATOR</h2>
+    </div>
+    <div class="item">
+      <label for="gross-income">Gross-Income :</label>
+      <input type="number" placeholder="gross-income" id="grossIncome"><hr/>
+      <label for="Personal-Relief">Personal-Relief</label>
+      <input type="number" placeholder="personal-relief" id="personalRelief"><hr/>
+      <label for="Pension-Fund-Contribution">Pension Fund Contribution</label>
+      <input type="number" placeholder="Pension-Fund-Contribution" id="PensionFundContribution"><hr/>
+      <label for="Disability-Exemption">Disability-Exemption</label>
+      <input type="number" placeholder="Disability-Exemption" id="disabilityExemption"><hr/>
+    <label for="Housing-Relief">Housing-Relief</label>
+      <input type="number" placeholder="Housing-Relief" id="housingRelief"><hr/>
+       <label for="nssf">Old NSSF</label>
+      <p><label><input class="" type="checkbox" id="oldNSSFRates" /> Use old NSSF Rates</label></p>
+      <button onclick="calculate()">Calculate</button>
+    </div>
+    <!-----Display results from js -->
+    <div class="dispaly">
+      <label for="incomedisplay">PAYE AMOUNT :</label><P id="incomeDisplay"></P><hr/>
+      <label for="reliefdisplay">PERSONAL-RELIEF :</label><P id="reliefDisplay"></P><hr/>
+      <label for="pensiondisplay">PENSION-FUND-CONTRIBUTION :</label><P id="pensionDisplay"></P><hr/>
+      <label for="disabilitydisplay">DISABILITY-EXEMPTION:</label><P id="disabilityDisplay"></P><hr/>
+      <label for="housingdisplay">HOUSING-RELIEF :</label><P id="housingDisplay"></P><hr/>
+      <label for="nssfdeductionDisplay">NSSF DEDUCTION :</label><P id="nssfDeductionDisplay"></P><hr/>
+      <label for="nhifdeductionDisplay">NHIF DEDUCTION :</label><P id="nhifdeductionDisplay"></P><hr/>
+    </div>
+   </div>
+   <h2>NET SALARY:</h2>
+   <P id="netsallary"></P>
+   <!--------JS external file link-->
+  <script src="./index.js"></script>
+</body>
+</html>
