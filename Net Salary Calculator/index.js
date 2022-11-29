@@ -1,12 +1,12 @@
-//getting input from the html input
-const grossIncome=document.getElementById('grossIncome');
+
+
 //dtackling the code challenge
 function calculate(){
-const grossIncome=document.getElementById('grossIncome').value;
-const personalRelief=document.getElementById('personalRelief').value;
-const PensionFundContribution=document.getElementById('PensionFundContribution').value;
-const disabilityExemption=document.getElementById('disabilityExemption').value;
-const housingRelief=document.getElementById('housingRelief').value;
+const grossIncome=parseFloat(document.getElementById('grossIncome').value);
+const personalRelief=parseFloat(document.getElementById('personalRelief').value);
+const PensionFundContribution=parseFloat(document.getElementById('PensionFundContribution').value);
+const disabilityExemption=parseFloat(document.getElementById('disabilityExemption').value);
+const housingRelief=parseFloat(document.getElementById('housingRelief').value);
 
   //Paye calculation
 let paye;
@@ -80,7 +80,9 @@ console.log(disabilityExemption);
 console.log(housingRelief);
 console.log(nhifAmount);
 console.log(nssfAmount);
-
+//total
+let totalDeduction= (paye+nssfAmount+nhifAmount);
+ let netSalary=(grossIncome-totalDeduction);
 //displaying the results
 incomeDisplay.innerText=`${paye}`;
 reliefDisplay.innerText=`${personalRelief}`;
@@ -89,6 +91,5 @@ disabilityDisplay.innerText=`${disabilityExemption}`;
 housingDisplay.innerText=`${housingRelief}`;
 nssfDisplay.innerText=`${nssfAmount}`;
 nhifDisplay.innerText=`${nhifAmount}`;
-let totalDeduction= `(${paye}+${nhifAmount}+${nssfAmount})`;
-netsalary.innerText=`${grossIncome}-${totalDeduction}`;
+netsalary.innerText=`${netSalary}`;
 }
