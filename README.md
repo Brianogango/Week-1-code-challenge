@@ -34,4 +34,4 @@
     
 
 ## License
-Licenced under the [MT-licence]()Copyright (c) 2022 **Brian Ogango
+Licenced under the [MT-licence](https://github.com/Brianogango/week-1-code-challenge/blob/main/license.md)Copyright (c) 2022 **Brian Ogango
