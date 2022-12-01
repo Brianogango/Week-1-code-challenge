@@ -9,12 +9,11 @@
     - Download the zip file under the code tab.
     - Extract files from the zip file.
     - Open the extracted folder with vscode.
-    - on your VS Code terminal run "json-server --watch database.json" to expose our local server
-    - Open index.html file in vscode and right click in the workarea, the navigate to "open liveserver". (The app will open with your default browser).
+    - Open index.html file with your default browser).
     - And the you are good to go.
 
     #### Requirement
-    Json Server - 
+    Node.js- 
 
 ## BDD
     As a user :
